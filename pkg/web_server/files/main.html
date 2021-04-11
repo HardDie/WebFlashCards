@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main page</title>
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+        form {border: 3px solid #f1f1f1;}
+
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        .buttonSettings { background-color: #1B8ADB; }
+        .buttonLogout { background-color: #EC4638; }
+        .button:hover { opacity: 0.8; }
+    </style>
+</head>
+<body>
+    <form action="/" method="POST">
+        <button class="button" name="new_state" value="self_check_1">Self check (Question -> Answer)</button>
+        <button class="button" name="new_state" value="self_check_2">Self check (Answer -> Question)</button>
+        <button class="button" name="new_state" value="self_check_3">Self check (Both)</button>
+        <button class="button" name="new_state" value="typing_1">Typing (Question -> Answer)</button>
+        <button class="button" name="new_state" value="typing_2">Typing (Answer -> Question)</button>
+        <button class="button" name="new_state" value="typing_3">Typing (Both)</button>
+        <button class="button buttonSettings" name="new_state" value="settings">Settings</button>
+        <button class="button buttonLogout" name="new_state" value="logout">Logout</button>
+    </form>
+</body>
+</html>
